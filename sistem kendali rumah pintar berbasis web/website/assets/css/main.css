@@ -1,0 +1,216 @@
+.onoffswitch {
+    position: relative; width: 176px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 21px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 50px; padding: 0; line-height: 50px;
+    font-size: 15px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+#close:before{
+	content: "Open"
+}
+#close:after{
+	content: "Close"
+}
+
+
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 16px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 122px;
+    border: 2px solid #999999; border-radius: 21px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-left: 70%;
+  cursor: pointer;
+}
+#ctime, #tpick {
+  font-family: Impact, sans-serif;
+
+}
+
+.header {
+  text-align: center;
+  font-weight: normal;
+  margin: 1px 0 1px 0;
+}
+
+/* [CURRENT TIME] */
+#ctime {
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 1px;
+  text-align: center;
+}
+#ctime .header {
+  color: #c61d1d;
+}
+#ctime .square {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+}
+#ctime .digits {
+  font-size: 15px;
+  background: #fff;
+  color: #000;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+#ctime .text {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* [TIME PICKER] */
+#tpick {
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 10px;
+  white-space: nowrap;
+}
+#tpick-h, #tpick-m, #tpick-s,#tpick-h_a, #tpick-m_a, #tpick-s_a,#onoff,#tpick-h2, #tpick-m2, #tpick-s2,#tpick-h2_a, #tpick-m2_a, #tpick-s2_a,#tpick-h3, #tpick-m3, #tpick-s3,#tpick-h3_a, #tpick-m3_a, #tpick-s3_a,#onoff4,#onoff5,#tpick-h4, #tpick-m4, #tpick-s4,#tpick-h4_a, #tpick-m4_a, #tpick-s4_a,#tpick-h5, #tpick-m5, #tpick-s5,#tpick-h5_a, #tpick-m5_a, #tpick-s5_a {
+  display: inline-block;
+  right: 100px;
+  /*width: 30%;*/
+}
+#tpick select {
+  box-sizing: padding-box;
+  width: 110%;
+  font-size: 1em;
+  margin: 10px 0;
+}
+#tset, #treset,#tset2, #treset2,#tset3, #treset3,#tset4, #treset4,#tset5, #treset5  {
+  box-sizing: padding-box;
+  width: 50%;
+  background: #3368b2;
+  color: #fff;
+  padding: 10px;
+  border: 0;
+  cursor: pointer;
+}
+#tset:disabled, #treset:disabled,#tset2:disabled, #treset2:disabled,#tset3:disabled, #treset3:disabled,#tset4:disabled, #treset4:disabled,#tset5:disabled, #treset5:disabled {
+  background: #aaa;
+  color: #888;
+}
+#samuel{
+	left: 20%;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 5px solid #dddddd;
+  padding: 8px;
+}
+table.fixed {table-layout:fixed; width:90%;}/*Setting the table width is important!*/
+table.fixed td {overflow:hidden;}/*Hide */
+
+
+.btn-group a {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 5px 20px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+  background-color: #000000;
+}
+
+.btn-group a:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group a:hover {
+  background-color: #3e8e41;
+}
+div label input {
+   margin-right:100px;
+}
+body {
+    font-family:sans-serif;
+}
+
+#ck-button {
+	position: relative;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin:4px;
+    background-color: #4CAF50;
+    border: 3px solid green;
+    color: white;
+    overflow:auto;
+    float:left; 
+    /*kalo dikoment bagus di hp, kalo engga bagus di laptop*/ 
+	/*left: 100px; */
+}
+
+#ck-button label {
+    float:left;
+    width:4.0em;
+}
+
+#ck-button label span {
+    text-align:center;
+    padding:3px 0px;
+    display:block;
+}
+
+#ck-button label input {
+    position:absolute;
+    top:-20px;
+}
+
+#ck-button input:checked + span {
+    background-color:#3e8e41;
+    color:#fff;
+}

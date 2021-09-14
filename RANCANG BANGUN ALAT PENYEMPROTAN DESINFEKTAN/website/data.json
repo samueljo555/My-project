@@ -1,0 +1,11 @@
+[
+    {
+        "suhu": 0,
+        "status_masuk": 0,
+        "status_keluar": 0,
+        "tolak": 0,
+        "keluar": 0,
+        "dalam": 0,
+        "total": 0
+    }
+]

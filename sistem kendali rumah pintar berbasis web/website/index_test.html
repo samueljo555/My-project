@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="assets/css/main.css" />
+				<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+	<script src="script.js"></script>
+	<title></title>
+</head>
+<body>
+	<table class="fixed" align="center">
+						<tr>
+			<td align="center">
+				<img src="images/0_0.png" name="lamp1"></td>
+			<td align="center">
+				<div id="ctime">
+									      <p class="header">THE CURRENT TIME</p>
+									      <div class="square">
+									        <div class="digits" id="chr">00</div>
+									        <div class="text">HR</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="cmin">00</div>
+									        <div class="text">MIN</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="csec">00</div>
+									        <div class="text">SEC</div>
+									      </div>
+									    </div>
+
+									    <!-- [SET ALARM] -->
+									    <div id="tpick" >
+									      <p class="header">
+									        SET ALARM
+									      </p>
+									      <div id="tpick-h"></div>
+									      <div id="tpick-m"></div>
+									      <div id="tpick-s"></div>
+									      <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;OFF</div>
+									    </div>
+									   <div id="tpick" >
+									      <div id="tpick-h_a"></div>
+									      <div id="tpick-m_a"></div>
+									      <div id="tpick-s_a"></div>
+									      <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;ON</div>
+									      <div>
+									        <input type="button" value="Set" id="tset"/>
+									        <input type="button" value="Reset" id="treset" disabled/>
+									      </div>
+									    </div>
+									    
+
+									    <!-- [ALARM SOUND] -->
+									    <audio id="alarm-sound" loop>
+									      <source src="https://code-boxx.com/wp-content/uploads/2018/12/wake-up-sound.mp3" type="audio/mp3">
+									    </audio>
+									<form name="form1" method="post" action="">
+									<div class="onoffswitch">
+    									<input type="checkbox" name="checkbox1" value="1" class="onoffswitch-checkbox" id="myonoffswitch" onClick="changePic1();">
+    									<label class="onoffswitch-label" for="myonoffswitch">
+        									<span class="onoffswitch-inner"></span>
+        									<span class="onoffswitch-switch"></span>
+    									</label>
+									</div>
+									</form>
+								</td>
+
+		</tr>
+		<tr>
+			<td align="center">
+				<img src="images/0_0.png" name="lamp2"></td>
+			<td align="center">
+				<div id="ctime">
+									      <p class="header">THE CURRENT TIME</p>
+									      <div class="square">
+									        <div class="digits" id="chr2">00</div>
+									        <div class="text">HR</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="cmin2">00</div>
+									        <div class="text">MIN</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="csec2">00</div>
+									        <div class="text">SEC</div>
+									      </div>
+									    </div>
+
+									    <!-- [SET ALARM] -->
+									    <div id="tpick">
+									      <p class="header">
+									        SET ALARM
+									      </p>
+									      <div id="tpick-h2"></div>
+									      <div id="tpick-m2"></div>
+									      <div id="tpick-s2"></div>
+										  <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;OFF</div>			
+									    </div>
+									    <div id="tpick">
+									      <div id="tpick-h2_a"></div>
+									      <div id="tpick-m2_a"></div>
+									      <div id="tpick-s2_a"></div>
+										  <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;ON</div>
+									      <div>
+									        <input type="button" value="Set" id="tset2"/>
+									        <input type="button" value="Reset" id="treset2" disabled/>
+									      </div>
+									    </div>
+									    
+
+									    <!-- [ALARM SOUND] -->
+									    <audio id="alarm-sound2" loop>
+									      <source src="https://code-boxx.com/wp-content/uploads/2018/12/wake-up-sound.mp3" type="audio/mp3">
+									    </audio>
+										<form name="form2" method="post" action="">
+									<div class="onoffswitch">
+    									<input type="checkbox" name="checkbox2" class="onoffswitch-checkbox" id="1myonoffswitch" onClick="changePic2();">
+    									<label class="onoffswitch-label" for="1myonoffswitch">
+        									<span class="onoffswitch-inner"></span>
+        									<span class="onoffswitch-switch"></span>
+    									</label>
+									</div>
+									</form>
+								</td>
+
+		</tr>
+		<tr>
+			<td align="center"><img src="images/curtain_closed.jpg" width="50%" height="50%" name="tirai" align="center"></td>
+			<td align="center">
+				<div id="ctime">
+									      <p class="header">THE CURRENT TIME</p>
+									      <div class="square">
+									        <div class="digits" id="chr3">00</div>
+									        <div class="text">HR</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="cmin3">00</div>
+									        <div class="text">MIN</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="csec3">00</div>
+									        <div class="text">SEC</div>
+									      </div>
+									    </div>
+
+									    <!-- [SET ALARM] -->
+									    <div id="tpick">
+									      <p class="header">
+									        SET ALARM
+									      </p>
+									      <div id="tpick-h3"></div>
+									      <div id="tpick-m3"></div>
+									      <div id="tpick-s3"></div>
+									      <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;Close</div>
+									    </div>
+									    <div id="tpick">
+									      <div id="tpick-h3_a"></div>
+									      <div id="tpick-m3_a"></div>
+									      <div id="tpick-s3_a"></div>
+									      <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;Open</div>
+									      <div>
+									        <input type="button" value="Set" id="tset3"/>
+									        <input type="button" value="Reset" id="treset3" disabled/>
+									      </div>
+									    </div>
+									    
+
+									    <!-- [ALARM SOUND] -->
+									    <audio id="alarm-sound3" loop>
+									      <source src="https://code-boxx.com/wp-content/uploads/2018/12/wake-up-sound.mp3" type="audio/mp3">
+									    </audio>
+									<form name="form3" method="post" action="">
+									<br>
+									<div class="onoffswitch" >
+    									<input type="checkbox" name="checkbox3" class="onoffswitch-checkbox" id="2myonoffswitch" onClick="curtain_co();" >
+    									<label class="onoffswitch-label" for="2myonoffswitch">
+        									<span class="onoffswitch-inner" id="close"></span>
+        									<span class="onoffswitch-switch"></span>
+    									</label>
+									</div>
+									</form>
+								</td>
+
+		</tr>
+		<tr>
+			<td align="center"><img src="images/0_0.png"  name="rgb"></td>
+			<td align="center">
+				<div id="ctime">
+									      <p class="header">THE CURRENT TIME</p>
+									      <div class="square">
+									        <div class="digits" id="chr4">00</div>
+									        <div class="text">HR</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="cmin4">00</div>
+									        <div class="text">MIN</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="csec4">00</div>
+									        <div class="text">SEC</div>
+									      </div>
+									    </div>
+
+									    <!-- [SET ALARM] -->
+									    <div id="tpick">
+									      <p class="header">
+									        SET ALARM
+									      </p>
+									      <div id="tpick-h4"></div>
+									      <div id="tpick-m4"></div>
+									      <div id="tpick-s4"></div>
+									      <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;OFF</div>
+									    </div>
+									    <div id="tpick">
+									      <div id="tpick-h4_a"></div>
+									      <div id="tpick-m4_a"></div>
+									      <div id="tpick-s4_a"></div>
+									      <div id="onoff4">
+									      	<select id="bulb">
+									      	<option value="green">hijau</option>
+									      	<option value="red">merah</option>
+									      	<option value="white">putih</option>
+									      	<option value="blue">biru</option>
+									      	<option value="yellow">kuning</option>
+									      	<option value="orange">orange</option>
+									      	</select>
+									      </div>
+									      <div id="onoff5">&nbsp;&nbsp;&nbsp;&nbsp;ON</div>									      							
+	     
+									      <div>
+									        <input type="button" value="Set" id="tset4"/>
+									        <input type="button" value="Reset" id="treset4" disabled/>
+									      </div>
+									    </div>
+
+									    <!-- [ALARM SOUND] -->
+									    <audio id="alarm-sound4" loop>
+									      <source src="https://code-boxx.com/wp-content/uploads/2018/12/wake-up-sound.mp3" type="audio/mp3">
+									    </audio>
+									    <form name="form4" method="post" action="">
+									<div class="onoffswitch">
+    									<input type="checkbox" name="checkbox4" class="onoffswitch-checkbox" id="myonoffswitch4" onClick="changePic4();">
+    									<label class="onoffswitch-label" for="myonoffswitch4">
+        									<span class="onoffswitch-inner"></span>
+        									<span class="onoffswitch-switch"></span>
+    									</label>	
+									</div>
+									<br><br>
+									<div id="ck-button">
+									   <label>
+									      <input type="checkbox" name="rgb" id="green" onClick="ckChange(this)"><span>Hijau</span>
+									   </label>
+									   <label>
+									      <input type="checkbox" name="rgb" id="red" onClick="ckChange(this)"><span>Merah</span>
+									   </label>
+									   <label>
+									      <input type="checkbox" name="rgb" id="white" onClick="ckChange(this)"><span>Putih</span>
+									   </label>
+									   <label>
+									      <input type="checkbox" name="rgb" id="blue" onClick="ckChange(this)"><span>Biru</span>
+									   </label>
+									   <label>
+									      <input type="checkbox" name="rgb" id="yellow" onClick="ckChange(this)"><span>Kuning</span>
+									   </label>
+									   <label>
+									      <input type="checkbox" name="rgb" id="orange" onClick="ckChange(this)"><span>orange</span>
+									   </label>									   									   									   									   
+									</div>		
+									</form>
+								</td>
+
+		</tr>
+		<tr>
+			<td align="center"><img src="images/colokan.jpg" width="50%" height="50%" name="colokan" align="center"></td>
+			<td align="center">
+				<div id="ctime">
+									      <p class="header">THE CURRENT TIME</p>
+									      <div class="square">
+									        <div class="digits" id="chr5">00</div>
+									        <div class="text">HR</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="cmin5">00</div>
+									        <div class="text">MIN</div>
+									      </div>
+									      <div class="square">
+									        <div class="digits" id="csec5">00</div>
+									        <div class="text">SEC</div>
+									      </div>
+									    </div>
+
+									    <!-- [SET ALARM] -->
+									    <div id="tpick">
+									      <p class="header">
+									        SET ALARM
+									      </p>
+									      <div id="tpick-h5"></div>
+									      <div id="tpick-m5"></div>
+									      <div id="tpick-s5"></div>
+									      <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;Close</div>
+									    </div>
+									    <div id="tpick">
+									      <div id="tpick-h5_a"></div>
+									      <div id="tpick-m5_a"></div>
+									      <div id="tpick-s5_a"></div>
+									      <div id="onoff">&nbsp;&nbsp;&nbsp;&nbsp;Open</div>
+									      <div>
+									        <input type="button" value="Set" id="tset5"/>
+									        <input type="button" value="Reset" id="treset5" disabled/>
+									      </div>
+									    </div>
+									    
+
+									    <!-- [ALARM SOUND] -->
+									    <audio id="alarm-sound5" loop>
+									      <source src="https://code-boxx.com/wp-content/uploads/2018/12/wake-up-sound.mp3" type="audio/mp3">
+									    </audio>
+									<form name="form5" method="post" action="">
+									<br>
+									<div class="onoffswitch" >
+    									<input type="checkbox" name="checkbox5" class="onoffswitch-checkbox" id="myonoffswitch5" onClick="changePic5();" >
+    									<label class="onoffswitch-label" for="myonoffswitch5">
+        									<span class="onoffswitch-inner" id="close"></span>
+        									<span class="onoffswitch-switch"></span>
+    									</label>
+									</div>
+									</form>
+								</td>
+
+		</tr>
+	</table>
+
+</body>
+</html>

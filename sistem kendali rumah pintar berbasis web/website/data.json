@@ -1,0 +1,23 @@
+[
+    {
+        "name": "bulb1",
+        "switch": "off1"
+    },
+    {
+        "name": "bulb2",
+        "switch": "off2"
+    },
+    {
+        "name": "tirai",
+        "switch": "open"
+    },
+    {
+        "name": "colokan",
+        "switch": "off5"
+    },
+    {
+        "name4": "bulbrgb",
+        "rgb": "orange",
+        "switch": "off3"
+    }
+]
